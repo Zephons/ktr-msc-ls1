@@ -1,12 +1,8 @@
 package eu.epitech.businesscard.service.impl;
 
-import java.util.ArrayList;
-import java.util.Collection;
-
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -35,6 +31,4 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 		}
 		return new User(profile.getUsername(), profile.getPassword(), null);
 	}
-	
-
 }
